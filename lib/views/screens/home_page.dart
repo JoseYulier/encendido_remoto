@@ -1,3 +1,4 @@
+import 'package:encendido_remoto/views/components/buttons/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -5,14 +6,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(5),
-      child: Scaffold(
-          appBar: AppBar(
-            centerTitle: true,
-            title: const Text('Panel de Llenado '),
-          ),
-          body: Row(
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text('Panel de Llenado '),
+      ),
+      body: Column(
+        children: [
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
@@ -49,12 +50,27 @@ class HomePage extends StatelessWidget {
               )
             ],
           ),
-          floatingActionButton: FloatingActionButton(
-            onPressed: () {},
-            backgroundColor: Colors.blueAccent,
-            elevation: 20,
-            child: const Text('Llenar Depósito'),
-          )),
+          const SizedBox(height: 10),
+          Container(
+            decoration: const BoxDecoration(
+                color: Colors.grey,
+                shape: BoxShape.rectangle,
+                borderRadius: BorderRadius.all(Radius.circular(10.0))),
+            width: 300,
+            height: 100,
+            child: const Text(
+              'Datos Turbina',
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),
+          const SizedBox(height: 30),
+          CustomStatefulButton(text: 'Llenar', onPressed: () {}),
+        ],
+      ),
     );
   }
 }
