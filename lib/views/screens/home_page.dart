@@ -10,6 +10,24 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text('Panel de Llenado '),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(color: Colors.white),
+              ),
+              child: IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.settings,
+                  color: Colors.grey,
+                ),
+              ),
+            ),
+          )
+        ],
       ),
       body: Column(
         children: [
