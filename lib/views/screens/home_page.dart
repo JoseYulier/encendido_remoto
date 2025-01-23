@@ -19,7 +19,9 @@ class HomePage extends StatelessWidget {
                 border: Border.all(color: Colors.white),
               ),
               child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
                 icon: const Icon(
                   Icons.settings,
                   color: Colors.grey,
