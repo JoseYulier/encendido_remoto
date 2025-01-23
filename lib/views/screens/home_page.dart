@@ -41,13 +41,16 @@ class HomePage extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(10.0))),
                 width: 150,
                 height: 300,
-                child: const Text(
-                  'Tanque Elevado',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold),
+                child: const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Text(
+                    'Tanque Elevado',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ),
               Container(
@@ -57,13 +60,16 @@ class HomePage extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(10.0))),
                 width: 150,
                 height: 300,
-                child: const Text(
-                  'Cisterna',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold),
+                child: const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Text(
+                    'Cisterna',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               )
             ],
@@ -76,13 +82,16 @@ class HomePage extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(10.0))),
             width: 300,
             height: 100,
-            child: const Text(
-              'Datos Turbina',
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                  fontSize: 15,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold),
+            child: const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
+                'Datos Turbina',
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold),
+              ),
             ),
           ),
           const SizedBox(height: 30),
